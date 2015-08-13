@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  +servicesLinks
+
+  p At E&H, we carry a variety type of fences, wood, steel and everything in between. We specialize in fence
+    | installation, from removing old fences, trees and shrubs, to the installation, and cleaning.
+
+  p Have something special in mind? No worries, we can build custom fences to suit your needs.
+  div.custom-img
+    p custom built fences on the spot
+
+
+  table#fencetable
+    tr: td(colspan="7"): h2 Types of Fences
+    tr: td Wood Fences &#45; PVC/Vinyl Fences &#45; Chain Link Fences &#45;
+      | Aluminum & Steel Fences &#45;
+      | Kennels / Enclosures &#45;
+      | Latch & Hinge Replacement &#45;
+      | Custom Designs and More
+
+  div.image-container
+    div.wood-img
+      p WOOD
+    div.vinyl-img
+      p VINYL
+    div.chainlink-img
+      p CHAINLINK
+    div.aluminum-img
+      p ALUMINUM
+
+  p To view some of the work we've done #[a(href="/gallery") click here ]

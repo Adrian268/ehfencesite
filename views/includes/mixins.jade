@@ -1,0 +1,18 @@
+mixin servicesLinks
+  h1 E&H Fence, LLC is #[span FULLY INSURED]
+  div.button.residential-btn
+      a(href="/services/residential") Residential Services
+  div.button.commercial-btn
+    a(href="/services/commercial") Commercial Services
+
+mixin license
+  div.license
+    h1 NJ DCA LICENSE #13VH08128300
+
+mixin imageSlider(fenceType)
+  .container
+    #slides
+      img(src="/images/gallery/#{fenceType}/1.jpg", alt="EH Fence Images")
+      img(src="/images/gallery/#{fenceType}/2.jpg", alt="EH Fence Images")
+      img(src="/images/gallery/#{fenceType}/3.jpg", alt="EH Fence Images")
+      img(src="/images/gallery/#{fenceType}/4.jpg", alt="EH Fence Images")

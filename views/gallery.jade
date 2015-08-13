@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  script.
+    $(function() {
+
+      $('#slides').slidesjs({
+        width: 940,
+        height: 470,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+
+      $(document).ready(function() {
+        $(".fancybox").fancybox();
+      });
+
+    });
+
+  h1 GALLERY
+
+  if fenceType== 'none'
+    include includes/gallery/gallery
+  else
+    include includes/gallery/fence-gallery
+
+

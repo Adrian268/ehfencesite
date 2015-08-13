@@ -1,0 +1,34 @@
+doctype html
+head
+  title #{title} - Fence Contractors
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  meta(name="Keywords", content="E&H Fence, Fence Service, Fence, Fence Contractor, Contractor, Fence Company, NJ, New Jersey, Belmar NJ, Wall NJ , Neptune NJ, Asbury Park NJ, Spring Lake NJ, Monmouth County NJ, Commercial and Residential Fence Company")
+  meta(name="Description", content="E&H Fence, LLC is a fully insured and licensed fence installation company, Fences, New Jersey, Belmar, Neptune, Asbury Park, Spring Lake, Monmouth County")
+  link(rel="stylesheet", type="text/css", href="/stylesheets/mainStyle.css")
+  link(rel="stylesheet", type="text/css", href="/stylesheets/#{page}Style.css")
+  link(rel="stylesheet", type="text/css", href="/stylesheets/SliderStyle.css")
+  script(src="/bower_components/jquery/dist/jquery.min.js")
+  script(src="/javascripts/jquery.slides.min.js")
+  link(rel="short icon", href="/images/favicon.png", type="/image/png")
+  if page== 'gallery'
+    script(type="text/javascript", src="/source/jquery.fancybox.js")
+    link(rel="stylesheet", type="text/css" href="/source/jquery.fancybox.css", media="screen")
+  if page== 'home'
+    script(src="/javascripts/slider-animation.js")
+  script(src="/javascripts/nav.js")
+  if page== 'gallery'
+    script(src="/javascripts/DisplayGallery.js")
+  script  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-53857965-1', 'auto'); ga('send', 'pageview');
+  include includes/mixins
+html(lang="en")
+  body
+
+    include includes/header
+
+    #mainbody
+      section
+        block content
+
+
+    include includes/footer
