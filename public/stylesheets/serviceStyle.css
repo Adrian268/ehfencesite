@@ -83,6 +83,7 @@ margin:0 auto}
 
 .custom-img{
     display: block;
+    position: relative;
     background: url('../images/custom.JPG') center center no-repeat;
     background-size: cover;
     width: 700px;
@@ -91,9 +92,11 @@ margin:0 auto}
 }
 
 .custom-img p{
-    display: table-cell;
-    height: 400px;
-    vertical-align: middle;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    padding-top: 150px;
     color: white;
     font-size: 50px;
     background-color: rgba(0, 0, 0, 0.35);

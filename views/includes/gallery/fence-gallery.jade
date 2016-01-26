@@ -1,7 +1,7 @@
 +imageSlider(fenceType)
 
-h3: a(href="/gallery/#{fenceType}", rel="#{fenceType}") #{fenceType}
-.imagewrapper
-  #pvcimages
+.full-image-gallery
+  h3: a(href="/gallery/#{fenceType}", rel="#{fenceType}") #{fenceTitle}
+  .full-gallery-wrapper
     script.
-      getSingleImages(70);
+      getAllImages();

@@ -1,41 +1,54 @@
-div.imagewrapper {
-    overflow-y:hidden;
-    overflow-x:scroll;
-    width:95%;
-    margin:5px auto;
-    height:200px;
-    text-align:left;
+
+div.imagewrapper{
+    width: 700px;
+    margin: 5px auto;
+    height: 160px;
+    text-align: left;
 }
 
-#pvcimages {width:15400px;
-height:200px}
+.image-gallery-container{
+    width: 100%;
+}
 
-#woodimages {width:3750px;
-height:200px}
-
-#aluminumimages {width:2640px;
-height:200px}
-
-#chainlinkimages {width:3750px;
-height:200px}
-
-#otherimages {width:2910px;
-height:200px}
 
 section img#smallImg{
     width:auto;
     height:150px;
-    margin:10px;
+    margin:10px 16px;
+    transition: transform .3s;
+}
+
+section img#smallImg:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 5px 0px black ;
+}
+
+section a {
+    color: #119016;
 }
 
 h3{
     text-align:left;
-    width:94%;
-    margin-left:3%;
-    margin-top:30px;
+    width:700px;
+    margin:30px auto 0 auto;
     border-bottom:1px solid gray
 }
 
-h3 a {
-    color: #119016;
+.full-image-gallery h3{
+    width: 95%;
+    margin-bottom: 5px;
 }
+
+.full-gallery-wrapper{
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.full-gallery-wrapper img#smallImg{
+    width:auto;
+    height:120px;
+    margin:2px 5px;
+}
+
+
